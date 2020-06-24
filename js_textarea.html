@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        function fnCount() {
+            var txtMsg = document.getElementById("txtMsg");
+            var divCounter = document.getElementById("divCounter");
+            divCounter.innerText = txtMsg.value.length + 1;
+
+        }
+
+        function blackme() {
+            var btn = documetn.getElementById("btnClickMe");
+            btn.style.backgroundcolor = "red";
+            btn.style.color = "white";
+        }
+    </script>
+</head>
+
+<body>
+    <textarea id="txtMsg" onkeypress="fnCount()"></textarea>
+    <br/>
+    <div id="divCounter">the number of charecters:</div>
+    <marquee onmouseover="stop()" onmouseout="start()">
+        welcome to my tags</marquee>
+    <input type="button" id="btnClickMe" value="clickme" onmouseover="blackme()" onmouseout="readme()" onclick="clickme()" />
+
+</body>
+
+</html>
